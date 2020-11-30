@@ -3,7 +3,7 @@ import React from "react";
 const Discounts = () => {
   return (
     <section id="discount-info-container">
-      <div id="discount-img">img</div>
+      <div id="discount-img"></div>
       <div id="discount-info">
         <div id="discount-circle">
           <span id="d-circle"></span>

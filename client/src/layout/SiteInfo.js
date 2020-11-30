@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SiteInfo = () => {
   return (
@@ -18,17 +19,17 @@ const SiteInfo = () => {
       </div>
       <div id="quick-links">
         <h4>Quick Links</h4>
-        <a href="#">About</a>
-        <a href="#">Blogs</a>
-        <a href="#">Contact</a>
-        <a href="#">FAQ</a>
+        <Link to="#">About</Link>
+        <Link to="#">Blogs</Link>
+        <Link to="#">Contact</Link>
+        <Link to="#">FAQ</Link>
       </div>
       <div id="account">
         <h4>My Account</h4>
-        <a href="#">My Account</a>
-        <a href="#">Orders Tracking</a>
-        <a href="#">Checkout</a>
-        <a href="#">Wishlist</a>
+        <Link to="#">My Account</Link>
+        <Link to="#">Orders Tracking</Link>
+        <Link to="#">Checkout</Link>
+        <Link to="#">Wishlist</Link>
       </div>
       <div id="newsletter-social">
         <h4>Newsletter</h4>

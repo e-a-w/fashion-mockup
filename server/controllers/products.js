@@ -3,7 +3,11 @@ const fs = require("fs").promises;
 exports.allProducts = async (req, res) => {
   let { limit } = req.query;
   limit = Number(limit);
-  delete req.query.limit;
+  Object.keys(req.query).forEach(key => {
+    if (key !== "category" && key !== "sale") {
+      delete req.query[key];
+    }
+  });
   try {
     let products = await fs.readFile("./server/json/products.json", "utf8");
     products = JSON.parse(products);

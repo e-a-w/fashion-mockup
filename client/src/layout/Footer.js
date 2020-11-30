@@ -7,6 +7,7 @@ const Footer = () => {
         This template is a mockup of https://preview.colorlib.com/theme/ashion/
         for learning purposes only
       </p>
+      <p>Images from unsplash</p>
     </footer>
   );
 };

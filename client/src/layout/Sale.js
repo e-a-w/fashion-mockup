@@ -28,7 +28,7 @@ const Sale = () => {
         })
         .catch(e => console.log(e));
     });
-  }, []);
+  }, [sales]);
 
   return (
     <section id="sales-container">

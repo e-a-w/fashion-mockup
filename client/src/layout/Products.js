@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -17,12 +18,20 @@ const Products = () => {
         <span>New</span> Product
       </h2>
       <div id="product-links">
-        <a onClick={() => setCategory(null)}>All</a>
-        <a onClick={() => setCategory("womens")}>Women's</a>
-        <a onClick={() => setCategory("mens")}>Men's</a>
-        <a onClick={() => setCategory("kids")}>Kids</a>
-        <a onClick={() => setCategory("accessories")}>Accessories</a>
-        <a onClick={() => setCategory("cosmetics")}>Cosmetics</a>
+        {[null, "womens", "mens", "kids", "accessories", "cosmetics"].map(
+          (category, i) => {
+            return (
+              <Link
+                key={i}
+                onClick={() => {
+                  setCategory(category);
+                }}
+              >
+                {category ? category.toUpperCase() : "ALL"}
+              </Link>
+            );
+          }
+        )}
       </div>
       <div id="product-cards">
         {products?.map(product => {
@@ -44,13 +53,13 @@ const Products = () => {
               <div className="p-info">
                 <p>{product.description}</p>
                 <div className="p-rating">
-                  <i className="material-icons">star</i>
-                  <i className="material-icons">star</i>
-                  <i className="material-icons">star</i>
-                  <i className="material-icons">star</i>
-                  <i className="material-icons">star</i>
+                  {[1, 2, 3, 4, 5].map(star => (
+                    <i key={star} className="material-icons">
+                      star
+                    </i>
+                  ))}
                 </div>
-                <h4>{product.price}</h4>
+                <h4>$ {product.price}</h4>
               </div>
             </div>
           );

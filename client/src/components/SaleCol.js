@@ -11,13 +11,13 @@ const SaleCol = ({ sale, products }) => {
             <div className="p-info">
               <p>{`${product.description.slice(0, 22)}...`}</p>
               <div className="p-rating">
-                <i className="material-icons">star</i>
-                <i className="material-icons">star</i>
-                <i className="material-icons">star</i>
-                <i className="material-icons">star</i>
-                <i className="material-icons">star</i>
+                {[1, 2, 3, 4, 5].map(star => (
+                  <i key={star} className="material-icons">
+                    star
+                  </i>
+                ))}
               </div>
-              <h4>{product.price}</h4>
+              <h4>$ {product.price}</h4>
             </div>
           </div>
         );

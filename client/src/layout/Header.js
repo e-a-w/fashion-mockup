@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,9 +11,9 @@ const Header = () => {
             Sitamet, consectetur adipiscing elit, sed do eiusmod tempor
             incidid-unt labore edolore magna aliquapendisse ultrices gravida.
           </p>
-          <a href="#" className="bordered-link">
+          <Link to="#" className="bordered-link">
             Shop Now
-          </a>
+          </Link>
         </div>
       </div>
       <div id="header-two">
@@ -20,36 +21,36 @@ const Header = () => {
           <div className="header-text">
             <h2>Men's fashion</h2>
             <p>258 items</p>
-            <a href="#" className="bordered-link">
+            <Link to="#" className="bordered-link">
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
         <div className="sub-header">
           <div className="header-text">
             <h2>Kid's fashion</h2>
             <p>273 items</p>
-            <a href="#" className="bordered-link">
+            <Link to="#" className="bordered-link">
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
         <div className="sub-header">
           <div className="header-text">
             <h2>Cosmetics</h2>
             <p>159 items</p>
-            <a href="#" className="bordered-link">
+            <Link to="#" className="bordered-link">
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
         <div className="sub-header">
           <div className="header-text">
             <h2>Accessories</h2>
             <p>792 items</p>
-            <a href="#" className="bordered-link">
+            <Link to="#" className="bordered-link">
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

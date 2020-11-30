@@ -14,7 +14,7 @@
   --condensed-font: "Roboto Condensed", "Roboto", sans-serif;
   --fancy-font: "Rochester", cursive;
   --text-light: #505050;
-  --text-red: rgb(219, 23, 23);
+  --red: rgb(219, 23, 23);
 }
 
 body {
@@ -32,7 +32,7 @@ body {
   font-family: var(--condensed-font);
   font-weight: 400;
   font-size: 1.1rem;
-  border-bottom: 2px solid var(--text-red);
+  border-bottom: 2px solid var(--red);
 }
 
 a,
@@ -49,7 +49,7 @@ a:hover {
 a:hover,
 a:focus,
 a:active {
-  color: var(--text-red);
+  color: var(--red);
 }
 
 /* NAVBAR */
@@ -117,12 +117,15 @@ a:active {
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 50px 50px 50px 30px;
   background: rgb(248, 210, 210);
+  background-image: url("https://images.unsplash.com/photo-1586471253726-b1fb0e5ab452?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
 }
 
-#header-one .header-text {
-  max-width: 700px;
+#header-one .header-text p {
+  max-width: 275px;
+  text-align: justify;
 }
 
 #header-one h1 {
@@ -334,7 +337,7 @@ a:active {
 
 .p-icons i:hover {
   color: white;
-  background: var(--text-red);
+  background: var(--red);
   animation: spin 0.3s;
 }
 
@@ -387,7 +390,7 @@ a:active {
 }
 
 #carousel-container h3 {
-  color: var(--text-red);
+  color: var(--red);
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -467,13 +470,16 @@ a:active {
 }
 
 #discount-img {
-  height: 40vh;
+  height: 45vh;
   width: calc(80vw - 30px);
-  background: rosybrown;
+  background-color: rosybrown;
+  background-image: url("https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
 #discount-info {
-  height: 40vh;
+  height: 45vh;
   width: calc(80vw - 30px);
   display: flex;
   flex-direction: column;
@@ -512,7 +518,7 @@ a:active {
   padding: 0px 0 10px;
   font-family: var(--fancy-font);
   font-size: 3rem;
-  color: var(--text-red);
+  color: var(--red);
 }
 
 .discount-sale {
@@ -523,7 +529,7 @@ a:active {
 
 .discount-sale span {
   font-weight: 600;
-  color: var(--text-red);
+  color: var(--red);
   font-size: 1.1rem;
 }
 
@@ -598,7 +604,7 @@ a:active {
 
 .guarantee-icon {
   font-size: 2.5rem;
-  color: var(--text-red);
+  color: var(--red);
 }
 
 .guarantee-info > h4 {
@@ -742,7 +748,7 @@ a:active {
   padding: 12px 20px;
   border: none;
   border-radius: 40px;
-  background: var(--text-red);
+  background: var(--red);
   color: white;
   font-family: var(--condensed-font);
   text-transform: uppercase;
